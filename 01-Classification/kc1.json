@@ -1,0 +1,56 @@
+[
+    {
+        "question": "Classificaiton is the task of _______",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "assigning labels to data",
+                "correct": true,
+                "feedback": "Yes, that is correct."
+            },
+            {
+                "answer": "estimate the next value",
+                "correct": false,
+                "feedback": "Regression is used to estimate the next value."
+            },
+            {
+                "answer": "measure the effectiveness of a model",
+                "correct": false,
+                "feedback": "No, accuracy is used to measure the effectiveness of a model."
+            },
+            {
+                "answer": "normalize the data",
+                "correct": false,
+                "feedback": "Classification does not perform data normalization."
+            },
+        ]
+    },
+    
+    {
+        "question": "When information from one data is used to improve classification in another dataset, it is called as ______ ",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "ResNet",
+                "correct": false,
+                "feedback": "No, ResNet is a deep learning architecture."
+            },
+            {
+                "answer": "transfer learning",
+                "correct": true,
+                "feedback": "Yes, that is correct."
+            },
+            {
+                "answer": "classification",
+                "correct": false,
+                "feedback": "No, classification assigns labels to data."
+            },
+            {
+                "answer": "ImageNet",
+                "correct": false,
+                "feedback": "No, ImageNet is dataset."
+            },
+        ]
+    },
+    
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "question": "In transfer learning using feature extraction, we ",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "start with randomly initialzed weights",
+                "correct": false,
+                "feedback": "No, that is experiment A: training ResNet from scratch."
+            },
+            {
+                "answer": "start with weights learned from ImageNet",
+                "correct": false,
+                "feedback": "No, that is experiment C: Training ResNet using Transfer Learning without Feature Extraction."
+            },
+            {
+                "answer": "we do nothing",
+                "correct": false,
+                "feedback": "No, please try again."
+            },
+            {
+                "answer": "use model trained on ImageNet but retrain the last layer.",
+                "correct": true,
+                "feedback": "Yes, that is experiment B: Training ResNet using Transfer Learning with Feature Extraction."
+            },
+        ]
+    },
+    
+]

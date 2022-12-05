@@ -1,0 +1,83 @@
+[
+    {
+        "question": "Augmentation is the task of",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "check the quality of an image",
+                "correct": false,
+                "feedback": "No, please try again."
+            },
+            {
+                "answer": "remove pixels from an image",
+                "correct": false,
+                "feedback": "No, please try again."
+            },
+            {
+                "answer": "finding the label of an image",
+                "correct": false,
+                "feedback": "Finding the label of an image is called classification."
+            },
+            {
+                "answer": "generating more dataset for training",
+                "correct": true,
+                "feedback": "Yes, augmentation is the task of generating more datasets for training."
+            },
+        ]
+    },
+    
+    {   
+        "question": "Image augmentation can be done using transformation techniques like:",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "flip",
+                "correct": false,
+                "feedback": "No, please try again."
+            },
+            {
+                "answer": "rotate",
+                "correct": false,
+                "feedback": "No, please try again."
+            },
+            {
+                "answer": "brightness and contrast change",
+                "correct": false,
+                "feedback": "No, please try again."
+            },
+            {
+                "answer": "all of the above",
+                "correct": true,
+                "feedback": "Yes, all the above technqiues are examples of image transformation"
+            },
+        ]
+    },
+        
+    {
+        "question": "Data augmentation is necessary when there is",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "too much data",
+                "correct": false,
+                "feedback": "No, we do not need augmentation when there is a large amount of data."
+            },
+            {
+                "answer": "just the right amount of data",
+                "correct": false,
+                "feedback": "No, we do not need augmentation when there is a right amount of data."
+            },
+            {
+                "answer": "too little data",
+                "correct": true,
+                "feedback": "Yes, we do data augmentation when there is insufficient data."
+            },
+            {
+                "answer": "no data at all",
+                "correct": false,
+                "feedback": "We cannot perform augmentation when there is no data."
+            },
+        ]
+    },
+    
+]
