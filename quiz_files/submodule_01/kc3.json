@@ -6,7 +6,7 @@
             {
                 "answer": "transfer learning with feature extraction had the highest accuracy.",
                 "correct": false,
-                "feedback": "No, please try again"
+                "feedback": "No, please try again."
             },
             {
                 "answer": "random initialization and transfer learning without feature extraction had higher accuracy than transfer learning with feature extraction",

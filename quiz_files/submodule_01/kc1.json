@@ -1,6 +1,6 @@
 [
     {
-        "question": "Classificaiton is the task of _______",
+        "question": "Classification is the task of _______",
         "type": "multiple_choice",
         "answers": [
             {
@@ -9,17 +9,17 @@
                 "feedback": "Yes, that is correct."
             },
             {
-                "answer": "estimate the next value",
+                "answer": "estimating the next value",
                 "correct": false,
                 "feedback": "Regression is used to estimate the next value."
             },
             {
-                "answer": "measure the effectiveness of a model",
+                "answer": "measuring the effectiveness of a model",
                 "correct": false,
                 "feedback": "No, accuracy is used to measure the effectiveness of a model."
             },
             {
-                "answer": "normalize the data",
+                "answer": "normalizing the data",
                 "correct": false,
                 "feedback": "Classification does not perform data normalization."
             },
@@ -27,7 +27,7 @@
     },
     
     {
-        "question": "When information from one data is used to improve classification in another dataset, it is called as ______ ",
+        "question": "When information from one dataset is used to improve classification in another dataset, it is called as ______ ",
         "type": "multiple_choice",
         "answers": [
             {

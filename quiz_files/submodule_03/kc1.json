@@ -4,22 +4,22 @@
         "type": "multiple_choice",
         "answers": [
             {
-                "answer": "flipping or scaling an image.",
+                "answer": "flipping or scaling an image",
                 "correct": false,
                 "feedback": "No, this is the purpose of augmentation."
             },
             {
-                "answer": "generating a pixel-wise classification map.",
+                "answer": "generating a pixel-wise classification map",
                 "correct": true,
                 "feedback": "Correct!"
             },
             {
-                "answer": "classifying the input image into a single group.",
+                "answer": "classifying the input image into a single group",
                 "correct": false,
                 "feedback": "No, that is classification."
             },
             {
-                "answer": "deleting an image.",
+                "answer": "deleting an image",
                 "correct": false,
                 "feedback": "Incorrect."
             }

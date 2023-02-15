@@ -1,85 +1,151 @@
-# Diving Into Deep Learning for Biomedical Data Analysis
-# University of Arkansas, Fayetteville
----
+<h1> Diving Into Deep Learning for Biomedical Data Analysis </h1>
+<h2> University of Arkansas, Fayetteville </h2>
+<hr />
+<hr />
+<br />
+<div id="toc"><h1> Table of Contents </h1></div><hr />
 
-Included here are four tutorials in the form of 'Jupyter notebooks'.
-
-The purpose of these tutorials is to help users learn about machine learning and its applications in the specific context of bioinformatics. 
-
-These tutorials cover the start to finish of basic bioinformatics analysis; starting from downloading raw sequence data and creating simple machine learning models to perform different tasks on biomedical data. 
-
-The tutorial is divided into four sub-modules. Each of the sub-modules cover four main concepts in machine learning.
-
-01-Classification <br>
-02-Augmentation <br>
-03-Segmentation <br>
-04-Regression
-
-# <a name="overview">Overview</a> 
----
-
-* <a href="#requirements">Requirements</a></br>
+* <a href="#intro">Introduction</a></br>
+* <a href="#mod-overview">Module Overview</a></br>
 * <a href="#getting-started">Getting Started</a></br>
-* <a href="#exec">Tutorial Execution</a></br>
-* <a href="#data">Data</a></br>
+* <a href="#exec">Running the Module</a></br>
+* <a href="#submod-overview">Submodule Overview</a></br>
 * <a href="#gloss">Glossary of Terms</a></br>
-</br>
+* <a href="#acknowledgements">Acknowledgements</a></br>
+<br/>
 
-# <a name="requirements">Requirements</a>
----
+<!-- Introduction --->
+<div id="intro"><h1> Introduction </h1></div><hr />
+<p>
+Data analysis and image processing is an important tool in biomedical engineering for identifying biologically relevant patterns within collected data. Although there are many well-established practices when it comes to data analysis, the ability to resolve important patterns hidden with data is limited by the knowledge of the researchers. Additionally, the identified patterns are highly susceptible to implicit biases contains within the data. Due to these limitations, there is a need for more advanced data analysis tools that can recognize the patterns and allow the researchers to accurately identify the biologically relevant patterns.   
 
-These tutorials were designed to be used on cloud computing platforms, with the aim of requiring nothing but the files within the github repository. 
+_Artificial intelligence_ (AI), which is defined as the simulation of human intelligence by computers, is a cutting edge tool in data analysis that allows for computers to identify patterns within data. Within AI, there are many different fields of research including _computer vision_, _machine learning_, and _deep learning_. Specifically, _deep learning_ refers to the utilization of a _neural network_ to identify and classify complex patterns within multidimensional data (e.g., images, tabular data, database records, etc.). Implementation of neural networks is not limited to scientific research, however, and can be found in everyday use. Some common example of  _neural networks_ in action are:
 
-Our tutorials use Jupyter Notebook files, which Google Cloud Platform, Amazon Web Service, and Microsoft Azure all provide support for. Therefore, requirements should only require creation of a virtual machine on one of these providers, and the downloading of this github's files to that machine.
+* ChatGPT
+* DALL-E 2
+* Home assistants (Amazon Alexa, Google Assistant, etc.)
+* Self-driving cars
+    
+In practice, a neural network first needs to undergo _training_, where the network incrementally learns patterns based on a relatively large collection of data. After training the network, it can then be deployed and _predict_ the learned patterns on data that it has not seen before. These _training_ and _prediction_ phases make neural networks a highly versatile tool that can be utilized in many engineering disciplines to achieve various tasks. Some examples of neural networks currently being used in biomedical engineering include:
 
-Each of the sub-modules are created in Python. The necessary libraries to run the notebooks are defined within the notebooks. 
+* Cancer detection
+* Cell and tissue segmentation
+* Particle tracking
+* Bioinformatics
+    
+In this module, you will learn the basic "ins" and "outs" of neural networks, including generating a neural network, manipulating datasets, training a neural network on the dataset, applying the trained neural network to a new dataset, and quantifying its performance.
+</p>
+<br />
 
+<!-- Module Overview --->
+<div id="mod-overview"><h1> Module Overview </h1></div><hr />
+<p>
+This module is broken up into four submodules:
+    
+01 - Classification
 
-# <a name="getting-started">Getting Started</a>
----
-To create a virtual machine for GCP, follow [these instructions](https://github.com/STRIDES/NIHCloudLabGCP/blob/main/docs/vertexai.md).
-Now that the virtual machine is created, and are in the Jupyterlab screen, you can run our tutorial files. But first you will need to download them.
+02 - Augmentation
+
+03 - Segmentation
+
+04 - Regression
+    
+Each submodule contains a "Jupyter notebook" that users will work through, all while discussing key scientific concepts along the way.
+
+These submodules were designed to be used on cloud computing platforms, with the aim of requiring nothing but the files within the GitHub repository. 
+
+Each of the submodules are created in `Python` and utilize the `PyTorch` library for deep learning. Each submodule also has additional libraries which are defined within the notebook(s) for each submodule. A general overview of this module can be found in <a href="#fig1">Figure 1</a>.
+</p>
+
+<img id="fig1" src="Images/nosi-ua-architecture.png" />
+<p> 
+    <i>Figure 1: The general architecture of this module, including the submodule names, datasets used in each submodule, and the python packages required.</i> 
+</p>
+<br />
+
+<!-- Getting Started --->
+<div id="getting-started"><h1> Getting Started </h1></div><hr />
+<p>
+To create a virtual machine for GCP, follow <a href="https://github.com/STRIDES/NIHCloudLabGCP/blob/main/docs/vertexai.md">these instructions</a>. When creating a virtual machine for this module, a kernel running PyTorch 1.13 is required. For this module, the `n1-standard-4` machine type will be sufficient. Additionally, a GPU is required for submodules 1-3 to substantially decrease network training times, and thus a single `NVIDIA T4` GPU is recommended. When selecting a GPU, you will also want to ensure that `Install NVIDIA GPU driver automatically for me` is checked.
+
+Now that the virtual machine is created, and are in the Jupyterlab screen, you can run the submodules. But first you will need to download them.
 To clone our repository directly you will need to open a new terminal. 
-Click the blue ``plus`` button on top left. This will open a new tab called ``launcher``. In the launcher select ``Terminal``. In the terminal copy and paste the following command:
-`gcloud source repos clone nosi-uams-alml --project=nosi-uams-alml-e5a5`.
-This will create a new folder called ``nosi-uams-alml``. This folder will contain all the necessary tutorial files. 
+Click the blue `plus` button on top left. This will open a new tab called `launcher`. In the launcher select `Terminal`. In the terminal copy and paste the following command:
+ > `git clone https://github.com/NIGMS/MachineLearningUA.git`
+    
+This will create a new folder called `MachineLearningUA`. This folder will contain all files within the module. 
+</p>
+<br />
+    
+<!-- Running the module --->
+<div id="exec"><h1> Running the Module </h1></div><hr />
+<p>
+After the module repository has been cloned, the different notebooks and data can be seen in the panel on the left <a href="#fig2">(Figure 2A)</a>.  To run them you need only to double click the submodule you want. 
+</p>
 
+<img id="fig2" src="Images/vertex-layout.png" />
+<p> 
+    <i>Figure 2: The layout of a Jupyter notebook within the virtual machine. The current folder location (A), as well as the "Run selected" (B) and "Run all" (C) buttons are found on this page.</i> 
+</p>  
 
-# <a name="exec">Tutorial Execution</a>
----
-
-All our tutorial workflows are Jupyter format. The different notebooks and data can be seen in the panel on the left (shown as 1 in Figure 2).  To run them you need only to double click the tutorial file you want. 
-
-It is recommended to run the files in a proper sequence as some of the concepts in the later notebooks requires knowledge obtained in prior notebooks. The recommended sequence and the main files are:
+<p>
+It is recommended to run the submodules in a proper sequence as some of the concepts in the later submodules requires knowledge obtained in prior submodules. The recommended sequence and the main files are:
 
 01-Classification.ipynb <br>
 02-Augmentation.ipynb <br>
 03-Segmentation.ipynb <br>
 04-Regression.ipynb
 
-The *.py* files contain the detailed description for the functions used in 01-Classification.ipynb and 02-Augmentation.ipynb.
+There may be multiple ".py" files within a submodule. The main ".ipynb" file is the only file that needs to be run, and the other ".py" files contain critical functions required for the submodule to work properly.
 
-In some cases, while running the code, **warning** messages might appear. *Do not worry!* These messages appear because of in-built functions in Python libraries becoming outdated due to updates. It will not affect the results.
+In some cases, while running the code, **warning** messages might appear. *Do not worry!* These messages appear because of in-built functions in Python libraries becoming outdated due to updates. These will not affect the submodules.
 
-The interface for Jupyter notebook can be seen in Figure 2.
-
-![Figure 2: Jupyter Notebook Interface](Images/vertexAI2.png)
-
-From here you can run each section, or **cell**, of the code, one by one, by pushing the ``Play`` button on the above menu (shown as 2 in Figure 2). To run all the cells at once push the double play button (shown as 3 in Figure 2).
+From here you can run each section, or **cell**, of the code, one by one, by pushing the `Play` button on the above menu <a href="#fig2">(Figure 2B)</a>. To run all the cells at once push the double play button <a href="#fig2">(Figure 2C)</a>.
 
 Some **cells** of code may take longer for the computer to process than others. You will know a cell is running when a cell has an asterisk \[\*\] next to it. When the cell finishes running, that asterisk will be replaced with a number which represents the order that cell was run in. Some cells may produce an output that would be appear when the code has stopped running. 
 
-You can now explore the tutorials by running the code, from top to bottom. Within each notebook there might be exercises marked by a blue square that ask to re-run a cell by changing the parameters and observing the output. Knowledge checks are also present in each sub-module marked by a blue square. These contain multiple choice questions about the content found in the sub-module.
+You can now explore the tutorials by running the code, from top to bottom. Within each notebook there might be exercises marked by a blue square that ask to re-run a cell by changing the parameters and observing the output. _Knowledge checks_, _Exercises_, and _Challenges_ are also present in each submodule marked by colored squares. These are for the user to test their knowledge of key scientific concepts within each notebook, and may require the user to modify code to successfully complete.
+</p>
+<br />
 
-Jupyter is a powerful tool, with many useful features. For more information on how to use Jupyter, we recommend searching for Jupyter tutorials and literature online.
 
-# <a name="data">Data</a>
----
+<!-- Submodule Overview --->
+<div id="submod-overview"><h1> Submodule Overview </h1></div><hr />
 
-These tutorials use image dataset mostly, except for the Regression sub-module that uses tabular dataset. The details of the dataset can be found in each of the sub-modules. For classification, augmentation and segmentation image dataset is used. For regression, tabular dataset is used.
+<h2> Submodule 1: Classification </h2>
+<img id="submod1" src="Images/submodule1.png" width="400" />
+<p>
+Convolutional neural networks (CNNs) are a powerful deep learning tool that allows for classification of images based on features contained with the image. For more complex network architectures, pre-trained models are available for use, and can be fine tuned using transfer learning. In this submodule, a specific CNN architecture (ResNet) is created from scratch and trained on the PathMNIST dataset. Next, a pre-trained version of ResNet is used to classify the same dataset, and then the network is fine tuned via transfer learning. Finally, the accuracy of each model is compared to determine the best model for this application.
 
-# <a name="gloss">Glossary of terms</a> 
----
+</p>
+<br />
+
+<h2> Submodule 2: Augmentation </h2>
+<img id="submod2" src="Images/submodule2.png" width="400" />
+<p>
+Although CNNs are very powerful tools for detecting features in images, image transformations such as rotation will cause a decrease in prediction accuracy. Sometimes there is not enough training data to cover all these variations. To increase robustness, networks can be trained on an augmented dataset that has additional images created from the originals using scaling, rotation, cropping, etc. In this submodule, multiple ResNet CNNs are trained using the BreastMNIST dataset and the network accuracy from each CNN is then compared.
+
+</p>
+<br />
+
+<h2> Submodule 3: Segmentation </h2>
+<img id="submod3" src="Images/submodule3.png" width="400" />
+<p>
+Typical CNNs output a single classification for an entire input image, which is not ideal for images the contain instances of multiple classes distributed spatially. A special type of CNN architecture can be used to produce a pixel-wise classification map, in a process called segmentation, for an input image. In this submodule, a UNet CNN is used to segment images of skin into classification maps based on the surrounding signal. The accuracy of the network is measured, and the classification maps produced by the trained network are visualized. 
+
+</p>
+<br />
+
+<h2> Submodule 4: Regression </h2>
+<img id="submod4" src="Images/submodule4.png" width="400" />
+<p>
+Classification is a powerful tool for biomedical image analysis. By default, CNNs output category labels for input images, which may not be as fine-grained as needed. CNNs can also be trained to output continuous values by switching the training regimen from classification to regression. In this submodule, a simple regression model is trained on a tabular breast cancer dataset. The trained model is then used to predict a continuous cancer radius value, based on multiple features within the data.
+
+</p>
+<br />
+<!-- Glossary --->
+<div id="gloss"><h1> Glossary </h1></div><hr />
+<p>
 
 Here we define some of the terms that you may come across throughout the tutorial:
 
@@ -110,3 +176,21 @@ Here we define some of the terms that you may come across throughout the tutoria
 * **Epoch**: Epoch defines the number times that the learning algorithm will work through the entire training dataset.
 
 * **Batch Size**: The batch size is the number of samples processed before the model is updated. The size of a batch must be more than or equal to one and less than or equal to the number of samples in the training dataset. Smaller batch sizes may cause the model to be less generalizable (overfitted) but large batch sizes are computationally more expensive and require more memory.
+ </p>
+ <br />
+ 
+ <!-- Acknowledgements --->
+<div id="acknowledgements"><h1> Acknowledgements </h1></div><hr />
+<p>
+    We would like to acknowledge the following funding sources for their continued support:
+    
+* 3P20GM103429-21S2
+* R01AG056560
+* R01EB031032
+* P20GM139768
+    
+</p>
+<p>
+    Additionally, we would like to thank all of the principal investigators, students, and personnel involved with this project.
+    </p>
+    <br />

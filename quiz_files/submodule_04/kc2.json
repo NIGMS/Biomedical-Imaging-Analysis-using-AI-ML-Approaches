@@ -19,9 +19,9 @@
                 "feedback": "No, we use the input parameters for the nn.Linear layer is input dimension of the image and the output parameter is the number of class labels"
             },
             {
-                "answer": "No paramters are required for nn.Linear.",
+                "answer": "No parameters are required for nn.Linear",
                 "correct": false,
-                "feedback": "No, nn.Linear requires two paramters"
+                "feedback": "No, nn.Linear requires two parameters."
             },
         ]
     },

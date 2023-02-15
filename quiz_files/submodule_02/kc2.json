@@ -1,7 +1,7 @@
 [
     
     {
-        "question": "The experiments in the Augmentation sub-module showed that adding augmented data to the original dataset ______ the accuracy.",
+        "question": "The experiments in the Augmentation submodule showed that adding augmented data to the original dataset ______ the accuracy.",
         "type": "multiple_choice",
         "answers": [
             {
@@ -10,7 +10,7 @@
                 "feedback": "Yes, we can observe the results in the barplot."
             },
             {
-                "answer": "reduced",
+                "answer": "decreased",
                 "correct": false,
                 "feedback": "No, please try again."
             },
