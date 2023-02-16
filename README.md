@@ -17,7 +17,7 @@
 <!-- Introduction --->
 <div id="intro"><h1> Introduction </h1></div><hr />
 <p>
-Data analysis and image processing is an important tool in biomedical engineering for identifying biologically relevant patterns within collected data. Although there are many well-established practices when it comes to data analysis, the ability to resolve important patterns hidden with data is limited by the knowledge of the researchers. Additionally, the identified patterns are highly susceptible to implicit biases contains within the data. Due to these limitations, there is a need for more advanced data analysis tools that can recognize the patterns and allow the researchers to accurately identify the biologically relevant patterns.   
+Data analysis and image processing is an important tool in biomedical engineering for identifying biologically relevant patterns within collected data. Although there are many well-established practices when it comes to data analysis, the ability to resolve important patterns hidden with data is limited by the knowledge of the researchers. Additionally, the identified patterns are highly susceptible to implicit biases contained within the data. Due to these limitations, there is a need for more advanced data analysis tools that can recognize the patterns and allow the researchers to accurately identify the biologically relevant patterns.   
 
 _Artificial intelligence_ (AI), which is defined as the simulation of human intelligence by computers, is a cutting edge tool in data analysis that allows for computers to identify patterns within data. Within AI, there are many different fields of research including _computer vision_, _machine learning_, and _deep learning_. Specifically, _deep learning_ refers to the utilization of a _neural network_ to identify and classify complex patterns within multidimensional data (e.g., images, tabular data, database records, etc.). Implementation of neural networks is not limited to scientific research, however, and can be found in everyday use. Some common example of  _neural networks_ in action are:
 
@@ -102,7 +102,7 @@ In some cases, while running the code, **warning** messages might appear. *Do no
 
 From here you can run each section, or **cell**, of the code, one by one, by pushing the `Play` button on the above menu <a href="#fig2">(Figure 2B)</a>. To run all the cells at once push the double play button <a href="#fig2">(Figure 2C)</a>.
 
-Some **cells** of code may take longer for the computer to process than others. You will know a cell is running when a cell has an asterisk \[\*\] next to it. When the cell finishes running, that asterisk will be replaced with a number which represents the order that cell was run in. Some cells may produce an output that would be appear when the code has stopped running. 
+Some **cells** of code may take longer for the computer to process than others. You will know a cell is running when a cell has an asterisk \[\*\] next to it. When the cell finishes running, that asterisk will be replaced with a number which represents the order that cell was run in. Some cells may produce an output that would appear when the code has stopped running. 
 
 You can now explore the tutorials by running the code, from top to bottom. Within each notebook there might be exercises marked by a blue square that ask to re-run a cell by changing the parameters and observing the output. _Knowledge checks_, _Exercises_, and _Challenges_ are also present in each submodule marked by colored squares. These are for the user to test their knowledge of key scientific concepts within each notebook, and may require the user to modify code to successfully complete.
 </p>
@@ -157,7 +157,7 @@ Here we define some of the terms that you may come across throughout the tutoria
 
 * **Layer**: A layer is a building block of deep learning that takes in a weighted input and applies a function to obtain an output.
 
-* **Convolutional Neural Network (NN)**: Convolutional neural networks are a specialized type of artificial neural networks that use a mathematical operation called convolution in place of general matrix multiplication in at least one of their layers. They are used in image recognition and processing.
+* **Convolutional Neural Network (CNN)**: Convolutional neural networks are a specialized type of artificial neural networks that use a mathematical operation called convolution in place of general matrix multiplication in at least one of their layers. They are used in image recognition and processing.
 
 * **Model**: A machine learning model is a program that has been trained to recognize certain types of patterns and find relationships between data. The model is trained over a set of data, providing it an algorithm that it can use to reason over and learn from those data. 
 
@@ -165,17 +165,17 @@ Here we define some of the terms that you may come across throughout the tutoria
 
 * **Test Data**: Unseen data over which machine learning model performance is evaluated.
 
-* **Validation Data**: Validation data is obtained from the training data and is used as part of the training process to reduce the bias in the model.
+* **Validation Data**: Data that is obtained from the training data and is used as part of the training process to reduce the bias in the model.
 
-* **Tensor**: Tensors are multidimensional vectors.
+* **Tensor**: A multidimensional vector.
 
-* **Parameter**: A parameter is a configuration variable that is internal to the model and whose value can be estimated from data.
+* **Parameter**: A configuration variable that is internal to the model and whose value can be estimated from data.
 
-* **Hyperparameter**: Hyperparameter is a configuration that is external to the model and whose value cannot be estimated from data.
+* **Hyperparameter**: A configuration that is external to the model and whose value cannot be estimated from data.
 
-* **Epoch**: Epoch defines the number times that the learning algorithm will work through the entire training dataset.
+* **Epoch**: The number times that the learning algorithm will work through the entire training dataset.
 
-* **Batch Size**: The batch size is the number of samples processed before the model is updated. The size of a batch must be more than or equal to one and less than or equal to the number of samples in the training dataset. Smaller batch sizes may cause the model to be less generalizable (overfitted) but large batch sizes are computationally more expensive and require more memory.
+* **Batch Size**: The number of samples processed before the model is updated. The size of a batch must be more than or equal to one and less than or equal to the number of samples in the training dataset. Smaller batch sizes may cause the model to be less generalizable (overfitted) but large batch sizes are computationally more expensive and require more memory.
  </p>
  <br />
  
