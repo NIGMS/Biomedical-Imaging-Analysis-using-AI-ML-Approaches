@@ -34,6 +34,8 @@ In practice, a neural network first needs to undergo _training_, where the netwo
 * Bioinformatics
     
 In this module, you will learn the basic "ins" and "outs" of neural networks, including generating a neural network, manipulating datasets, training a neural network on the dataset, applying the trained neural network to a new dataset, and quantifying its performance.
+
+This whole module will cost you about $1.00 to run, assuming you tear down all resources upon completion.
 </p>
 <br />
 
