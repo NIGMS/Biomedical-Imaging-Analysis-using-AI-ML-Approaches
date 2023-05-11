@@ -1,9 +1,9 @@
-<h1> Diving Into Deep Learning for Biomedical Data Analysis </h1>
-<h2> University of Arkansas, Fayetteville </h2>
-<hr />
-<hr />
-<br />
-<div id="toc"><h1> Table of Contents </h1></div><hr />
+# Diving Into Deep Learning for Biomedical Data Analysis  
+## University of Arkansas, Fayetteville  
+   
+   
+   
+# Table of Contents   
 
 * <a href="#intro">Introduction</a></br>
 * <a href="#mod-overview">Module Overview</a></br>
