@@ -1,3 +1,6 @@
+![course card](Images/UARK-course-card.png)   
+
+      
 # Diving Into Deep Learning for Biomedical Data Analysis  
 ## University of Arkansas, Fayetteville  
    
