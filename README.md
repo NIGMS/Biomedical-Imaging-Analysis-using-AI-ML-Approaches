@@ -1,4 +1,5 @@
 ![course card](Images/UARK-course-card.png)   
+Image adapted from https://doi.org/10.3389/fneur.2019.00869
 
       
 # Diving Into Deep Learning for Biomedical Data Analysis  
