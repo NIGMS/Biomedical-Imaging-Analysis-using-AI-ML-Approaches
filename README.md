@@ -77,7 +77,7 @@ To create a virtual machine for GCP, follow [these instructions](https://github.
 Now that the virtual machine is created, and are in the Jupyterlab screen, you can run the submodules. But first you will need to download them.
 To clone our repository directly you will need to open a new terminal. 
 Click the blue `plus` button on top left. This will open a new tab called `launcher`. In the launcher select `Terminal`. In the terminal copy and paste the following command:
-`git clone https://github.com/NIGMS/MachineLearningUA.git`
+`git clone https://github.com/NIGMS/Biomedical-Imaging-Analysis-using-AI-ML-Approaches.git`
     
 This will create a new folder called `MachineLearningUA`. This folder will contain all files within the module. 
    
