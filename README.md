@@ -1,4 +1,4 @@
-![course card](Images/UARK-course-card.png)   
+![course card](Images/UARK-course-card-2.png)   
 Image adapted from https://doi.org/10.3389/fneur.2019.00869
 
       
