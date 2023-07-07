@@ -195,3 +195,11 @@ We would like to acknowledge the following funding sources for their continued s
    
    
 Additionally, we would like to thank all of the principal investigators, students, and personnel involved with this project.
+
+## **License for Data**
+
+Text and materials are licensed under a Creative Commons CC-BY-NC-SA license. The license allows you to copy, remix and redistribute any of our publicly available materials, under the condition that you attribute the work (details in the license) and do not make profits from it. More information is available [here](https://tilburgsciencehub.com/about/#license).
+
+![Creative commons license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-
