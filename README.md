@@ -74,6 +74,14 @@ Each of the submodules are created in `Python` and utilize the `PyTorch` library
    
 To create a virtual machine for GCP, follow [these instructions](https://github.com/STRIDES/NIHCloudLabGCP/blob/main/docs/vertexai.md). When creating a virtual machine for this module, a kernel running PyTorch 1.13 is required. For this module, the `n1-standard-4` machine type will be sufficient. Additionally, a GPU is required for submodules 1-3 to substantially decrease network training times, and thus a single `NVIDIA T4` GPU is recommended. When selecting a GPU, you will also want to ensure that `Install NVIDIA GPU driver automatically for me` is checked.
 
+Additionally, make sure that automatic idle shutdown is enabled by clicking Advanced Options -> Machine type -> Enable Idle Shutdown when creating your notebook instance, as shown in the screenshots below. This is especially important when using GPUs because they can run up huge cloud bills if you forget to turn off the machine.
+
+![Create New user managed notebook](images/Create_new_notebook.png)
+
+![Select Advanced Options](images/Advanced_options.png)
+
+![Enable Idle Shutdown](images/Enable_auto_shutdown.png)
+
 Now that the virtual machine is created, and are in the Jupyterlab screen, you can run the submodules. But first you will need to download them.
 To clone our repository directly you will need to open a new terminal. 
 Click the blue `plus` button on top left. This will open a new tab called `launcher`. In the launcher select `Terminal`. In the terminal copy and paste the following command:
