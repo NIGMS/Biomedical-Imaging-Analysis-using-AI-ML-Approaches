@@ -11,7 +11,6 @@ Image adapted from https://doi.org/10.3389/fneur.2019.00869
 
 * [Introduction](#introduction)
 * [Module Overview](#module-overview)
-* [Getting Started](#getting-started)
 * [Running the Module](#running-the-module)
 * [Submodule Overview](#submodule-overview)
 * [Glossary of Terms](#glossary-of-terms)
