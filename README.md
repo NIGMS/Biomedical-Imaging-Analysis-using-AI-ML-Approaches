@@ -40,6 +40,8 @@ This whole module will cost you about $1.00 to run, assuming you tear down all r
     
 Watch this [Introduction Video](https://youtu.be/-5GHSZABDLk) to learn more about the module.
 
+This module is available for both [AWS](https://github.com/NIGMS/Biomedical-Imaging-Analysis-using-AI-ML-Approaches/tree/master/AWS) and [Google Cloud](https://github.com/NIGMS/Biomedical-Imaging-Analysis-using-AI-ML-Approaches/tree/master/GoogleCloud). 
+
 # Submodule Overview   
 
 ## Submodule 1: Classification   
