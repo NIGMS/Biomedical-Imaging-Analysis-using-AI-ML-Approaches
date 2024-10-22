@@ -30,11 +30,11 @@ To create an AWS SageMaker notebook, follow these steps [here](https://github.co
 1. Open the [AWS Management Console](https://aws.amazon.com/console/).
 2. Navigate to the Amazon SageMaker.
 3. Click on "Create notebook instance".
-4. Select the `ml.m5.xlarge` instance type (or equivalent).
+4. Select the `ml.t3.2xlarge` instance type (or equivalent) with 15 GB volume size .
 5. Configure instance details, ensuring that you enable idle shutdown.
 6. Start the instance and open JupyterLab.
 7. Clone the repository. 
-6. Select "conda_pytorch" kernel to run the notebooks.
+6. Select "conda_pytorch_p310" kernel to run the notebooks.
    
     
 # Running the Module   
