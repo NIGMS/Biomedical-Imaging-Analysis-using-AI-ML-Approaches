@@ -1,0 +1,29 @@
+[
+    {
+        "question": "The results of the experiments show that",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "transfer learning with feature extraction had the highest accuracy.",
+                "correct": false,
+                "feedback": "No, please try again."
+            },
+            {
+                "answer": "random initialization and transfer learning without feature extraction had higher accuracy than transfer learning with feature extraction",
+                "correct": true,
+                "feedback": "Yes, that is correct."
+            },
+            {
+                "answer": "results are inconclusive.",
+                "correct": false,
+                "feedback": "No, please try again."
+            },
+            {
+                "answer": "all experiments had the same results",
+                "correct": false,
+                "feedback": "No, please try again."
+            },
+        ]
+    },
+    
+]
