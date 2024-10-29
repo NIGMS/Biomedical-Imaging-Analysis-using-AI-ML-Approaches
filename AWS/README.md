@@ -17,7 +17,7 @@ These submodules were designed to be used on cloud computing platforms, with the
 Each of the submodules are created in `Python` and utilize the `PyTorch` library for deep learning. Each submodule also has additional libraries which are defined within the notebook(s) for each submodule. A general overview of this module can be found in Figure 1.
    
 
-![](Images/AWS_Architecture_Diagram.png)
+![](Images/AWS_Architecture_Diagram.svg)
    
 *Figure 1: The general architecture of this module, including the submodule names, datasets used in each submodule, and the python packages required.*
    
