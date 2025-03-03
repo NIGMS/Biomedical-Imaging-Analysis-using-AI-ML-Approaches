@@ -63,7 +63,7 @@ Although CNNs are very powerful tools for detecting features in images, image tr
 ## Submodule 3: Segmentation   
 ![](Images/submodule3.png)
   
-Typical CNNs output a single classification for an entire input image, which is not ideal for images the contain instances of multiple classes distributed spatially. A special type of CNN architecture can be used to produce a pixel-wise classification map, in a process called segmentation, for an input image. In this submodule, a UNet CNN is used to segment images of skin into classification maps based on the surrounding signal. The accuracy of the network is measured, and the classification maps produced by the trained network are visualized. 
+Typical CNNs output a single classification for an entire input image, which is not ideal for images that contain instances of multiple classes distributed spatially. A special type of CNN architecture can be used to produce a pixel-wise classification map, in a process called segmentation, for an input image. In this submodule, a UNet CNN is used to segment images of skin into classification maps based on the surrounding signal. The accuracy of the network is measured, and the classification maps produced by the trained network are visualized. 
 
    
    
