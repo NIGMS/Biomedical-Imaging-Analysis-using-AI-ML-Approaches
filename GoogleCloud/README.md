@@ -63,7 +63,7 @@ You can now explore the tutorials by running the code, from top to bottom. Withi
 
 ### Gemini (Optional)
 
-Generative is available in the form of Gemini if you would like to use it there. To run it, please reference the 01-Classification notebook or run the following code. You will need to save the util folder with the gemini.py file in the same directory as the notebook where you are running Gemini.
+Generative AI is available for this tutorial in the form of Gemini if you would like to use it. To run it, please reference the 01-Classification notebook or run the following code. You will need to save the util folder with the gemini.py file in the same directory as the notebook where you are running Gemini.
 
 ```!pip install -q google-generativeai google-cloud-secret-manager
 !pip install -q git+https://github.com/NIGMS/NIGMS-Sandbox-Repository-Template.git#subdirectory=llm_integrations
