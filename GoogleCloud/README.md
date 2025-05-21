@@ -60,3 +60,22 @@ From here you can run each section, or **cell**, of the code, one by one, by pus
 Some **cells** of code may take longer for the computer to process than others. You will know a cell is running when a cell has an asterisk \[\*\] next to it. When the cell finishes running, that asterisk will be replaced with a number which represents the order that cell was run in. Some cells may produce an output that would appear when the code has stopped running. 
 
 You can now explore the tutorials by running the code, from top to bottom. Within each notebook there might be exercises marked by a blue square that ask to re-run a cell by changing the parameters and observing the output. _Knowledge checks_, _Exercises_, and _Challenges_ are also present in each submodule marked by colored squares. These are for the user to test their knowledge of key scientific concepts within each notebook, and may require the user to modify code to successfully complete.
+
+### Gemini (Optional)
+
+Generative AI is available for this tutorial in the form of Gemini if you would like to use it. To run it, please reference the 01-Classification notebook or run the following code. You will need to save the util folder with the gemini.py file in the same directory as the notebook where you are running Gemini.
+
+```!pip install -q google-generativeai google-cloud-secret-manager
+!pip install -q git+https://github.com/NIGMS/NIGMS-Sandbox-Repository-Template.git#subdirectory=llm_integrations
+!pip install -q ipywidgets
+
+import sys
+import os
+util_path = os.path.join(os.getcwd(), 'util')
+if util_path not in sys.path:
+    sys.path.append(util_path)
+
+from gemini import run_gemini_widget, create_gemini_chat_widget 
+from IPython.display import display
+
+run_gemini_widget()
