@@ -64,7 +64,7 @@ def Create_Model_Optimizer_Criterion(n_classes, feature_extract = True, use_pret
         criterion : an object of torch.nn that is used to represent a loss function used for training torch model.
     '''
     
-    model = Initialize_Resnet18_model(n_classes, feature_extract, use_pretrained=True)
+    model = Initialize_Resnet18_model(n_classes, feature_extract, use_pretrained)
     
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")    ## set GPU device    
     # Send the model to GPU
