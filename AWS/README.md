@@ -64,3 +64,20 @@ From here you can run each section, or **cell**, of the code, one by one, by pus
 Some **cells** of code may take longer for the computer to process than others. You will know a cell is running when a cell has an asterisk \[\*\] next to it. When the cell finishes running, that asterisk will be replaced with a number which represents the order that cell was run in. Some cells may produce an output that would appear when the code has stopped running. 
 
 You can now explore the tutorials by running the code, from top to bottom. Within each notebook there might be exercises marked by a blue square that ask to re-run a cell by changing the parameters and observing the output. _Knowledge checks_, _Exercises_, and _Challenges_ are also present in each submodule marked by colored squares. These are for the user to test their knowledge of key scientific concepts within each notebook, and may require the user to modify code to successfully complete.
+
+## AWS Bedrock (Optional)
+
+Generative AI is available for this tutorial if you would like to use it. To run it, please reference Tutorial 1 - Classification, or run the following code within a submodule notebook. You will need to save the folder with the genai.py file in the same directory as the notebook where you are running the model.
+
+```!pip install -q ipywidgets
+import sys
+import os
+util_path = os.path.join(os.getcwd(), 'util')
+if util_path not in sys.path:
+    sys.path.append(util_path)
+
+# Import the display_widgets function from your Python file
+from genai import display_widgets
+
+# Call the function to display the widgets
+display_widgets()
