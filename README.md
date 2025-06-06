@@ -1,17 +1,15 @@
-![course card](Images/UARK-course-card-2.png)   
-Image adapted from https://doi.org/10.3389/fneur.2019.00869
-
-      
 # Diving Into Deep Learning for Biomedical Data Analysis  
 ## University of Arkansas, Fayetteville  
 
-   
-   
+<p align="center">
+<img src="Images/UARK-course-card-2.png" width="400" />
+</p>
+
+Image adapted from https://doi.org/10.3389/fneur.2019.00869
+
 # Table of Contents   
 
 * [Introduction](#introduction)
-* [Module Overview](#module-overview)
-* [Running the Module](#running-the-module)
 * [Submodule Overview](#submodule-overview)
 * [Glossary of Terms](#glossary-of-terms)
 * [Acknowledgements](#acknowledgements)
